@@ -1,26 +1,26 @@
-# Hospitality Insight in the Hospitality Domain  
+# Revenue Insights in the Hospitality Domain  
 ## End-to-End Data Analytics & Business Intelligence (Power BI • Power Query • DAX)
 
 ---
 
 ## 🚀 Project Summary
-**Hospitality Insight in the Hospitality Domain** is a production-style analytics project that transforms raw hotel booking and capacity data into **actionable revenue insights**. Built using **Power BI, Power Query, and DAX**, the solution enables data-driven decisions around pricing, occupancy, and channel performance.
+**Revenue Insights in the Hospitality Domain** is an end-to-end analytics project that converts raw hotel booking and capacity data into **actionable revenue intelligence**. Built using **Power BI, Power Query, and DAX**, the project mirrors real-world hotel revenue management workflows and supports data-driven pricing and operational decisions.
 
 ---
 
 ## 🎯 Business Objective
-Enable hotel stakeholders to:
-- Track standardized revenue KPIs
-- Identify revenue leakages caused by cancellations and no-shows
+Provide hotel stakeholders with a centralized analytics system to:
+- Monitor standardized revenue KPIs
+- Detect revenue leakages caused by cancellations and no-shows
 - Compare weekday vs weekend performance
-- Drill down across city, property, room type, and booking channel
+- Perform multi-level analysis by city, property, room type, and booking channel
 
 ---
 
 ## 🏗️ Data Architecture (Star Schema)
 
 ### Dimension Tables
-- **dim_hotels** – Property details including city, category, and ratings  
+- **dim_hotels** – Hotel metadata including city, category, and ratings  
 - **dim_rooms** – Room types, categories, and capacity  
 - **dim_date** – Calendar table with week number and weekday/weekend logic  
 
@@ -35,15 +35,15 @@ Enable hotel stakeholders to:
 ---
 
 ## 📊 KPI & Metrics Engine (DAX)
-All metrics are built and validated using **DAX**.
+All KPIs are developed and validated using **DAX**.
 
 - **Occupancy %** = Successful Bookings / Total Capacity  
 - **ADR (Average Daily Rate)** = Revenue from Sold Rooms / Rooms Sold  
 - **RevPAR (Revenue per Available Room)** = Total Revenue / Available Rooms  
 - **SRN / DSRN (Sellable Room Nights)** = Rooms available for sale per day  
-- **DURN (Utilized Room Nights)** = Actual room nights stayed (post check-in)  
+- **DURN (Utilized Room Nights)** = Actual room nights stayed after check-in  
 - **Realization %** = DURN / Booked Room Nights  
-- **WoW & MoM Change %** using DAX time intelligence  
+- **WoW & MoM Change %** using time-intelligence functions  
 
 ---
 
@@ -51,9 +51,9 @@ All metrics are built and validated using **DAX**.
 1. Business requirement analysis with revenue context  
 2. Data cleaning and transformation using Power Query  
 3. Star schema data modeling  
-4. DAX measure development and validation  
+4. DAX measure creation and validation  
 5. Interactive dashboard development  
-6. Stakeholder feedback and iterative refinement  
+6. Stakeholder feedback and iterative improvements  
 
 ---
 
@@ -62,21 +62,21 @@ All metrics are built and validated using **DAX**.
 - Drill-down analysis: City → Property → Room Type → Channel  
 - Weekday vs weekend revenue comparison  
 - WoW & MoM trend indicators  
-- Conditional formatting for performance monitoring  
+- Conditional formatting to highlight performance gaps  
 
 ---
 
 ## 💡 Business Insights
-- Identified flat pricing despite demand variability  
-- Revenue loss quantified through cancellations and no-shows using **DURN**  
-- Underperforming hotels linked to lower customer ratings  
-- Channel-level revenue inefficiencies highlighted  
+- Identified flat pricing strategies despite fluctuating demand  
+- Quantified revenue loss due to cancellations and no-shows using **DURN**  
+- Highlighted underperforming hotels linked to low customer ratings  
+- Revealed channel-level revenue inefficiencies  
 
 ---
 
 ## 🧠 Skills Demonstrated
 - Power BI Dashboard Development  
-- **DAX (KPI & Time Intelligence, including DURN)**  
+- **DAX (KPI Modeling & Time Intelligence, including DURN)**  
 - Power Query (ETL & Data Preparation)  
 - Star Schema Data Modeling  
 - Business & Revenue Analytics  
@@ -102,7 +102,7 @@ All metrics are built and validated using **DAX**.
 │   ├── meta_data_hospitality.csv
 │   └── metrics_list.csv
 ├── PowerBI_Dashboard/
-│   └── Hospitality_Insight_Dashboard.pbix
+│   └── Revenue_Insights_Hospitality.pbix
 ├── Screenshots/
 │   └── dashboard_views.png
 └── README.md
