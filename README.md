@@ -1,117 +1,95 @@
 # Hospitality Revenue Intelligence Platform  
-## End-to-End Data Analytics & Business Intelligence Project (Power BI)
+## End-to-End Data Analytics & Business Intelligence (Power BI • Power Query • DAX)
 
 ---
 
 ## 🚀 Project Summary
-This project delivers a **production-style Hospitality Revenue Intelligence platform** that mirrors how data analytics is applied in real hotel operations.  
-It converts raw booking and capacity data into **business-ready KPIs and insights**, enabling hotel management to optimize pricing, occupancy, and channel strategy.
-
-Designed with **analytics + data engineering best practices**, this project demonstrates strong alignment with **industry workflows, stakeholder-driven design, and scalable data modeling**.
+A **production-style Hospitality Revenue Intelligence platform** that transforms raw hotel booking data into **actionable revenue insights**. Built with **Power BI, Power Query, and DAX**, the solution enables data-driven pricing, capacity utilization, and channel optimization.
 
 ---
 
 ## 🎯 Business Objective
-Hotels operate in a highly demand-sensitive environment where revenue performance depends on:
-- Demand seasonality  
-- Booking and cancellation behavior  
-- Room capacity utilization  
-- Channel-wise sales effectiveness  
-
-The objective of this project is to **build a centralized analytics system** that:
-- Standardizes revenue KPIs  
-- Identifies revenue leakages  
-- Enables multi-level drill-down analysis  
-- Supports data-driven pricing and operational decisions  
+Enable hotel leadership to:
+- Standardize revenue KPIs
+- Detect revenue leakages (cancellations, no-shows)
+- Analyze weekday vs weekend performance
+- Drill down by city, property, room type, and channel
 
 ---
 
-## 🏗️ Data Architecture
-The project follows a **Star Schema data model**, ensuring scalability, performance, and analytical flexibility.
+## 🏗️ Data Architecture (Star Schema)
 
 ### Dimension Tables
-- **dim_hotels** – Hotel metadata (property, city, category, ratings)  
-- **dim_rooms** – Room types, categories, and capacity  
-- **dim_date** – Calendar table with weekday/weekend and week number logic  
+- **dim_hotels** – Property, city, category, ratings  
+- **dim_rooms** – Room types, categories, capacity  
+- **dim_date** – Calendar with week number and weekday/weekend logic  
 
 ### Fact Tables
-- **fact_bookings** – Booking-level transactional data (revenue, status, channel)  
-- **fact_aggregated_bookings** – Capacity vs successful booking aggregates  
+- **fact_bookings** – Booking-level transactions (revenue, status, channel)  
+- **fact_aggregated_bookings** – Capacity vs successful bookings  
 
 ### Reference Tables
-- **meta_data_hospitality** – Domain rules and business mappings  
-- **metrics_list** – Centralized KPI definitions for consistency  
+- **meta_data_hospitality** – Business rules & mappings  
+- **metrics_list** – Centralized KPI definitions  
 
 ---
 
-## 📊 Core KPIs & Metrics Engine
-All metrics are built using **validated DAX measures** to ensure accuracy and consistency.
+## 📊 KPI & Metrics Engine (DAX)
+All metrics are built and validated using **DAX**.
 
-- **Occupancy %**  
-- **ADR (Average Daily Rate)**  
-- **RevPAR (Revenue per Available Room)**  
-- **SRN / DSRN (Sellable Room Nights)**  
-- **Realization %**  
-- **Week-on-Week & Month-on-Month Trends**  
+- **Occupancy %** = Successful Bookings / Total Capacity  
+- **ADR (Average Daily Rate)** = Revenue from Sold Rooms / Rooms Sold  
+- **RevPAR (Revenue per Available Room)** = Total Revenue / Available Rooms  
+- **SRN / DSRN (Sellable Room Nights)** = Rooms available for sale per day  
+- **DURN (Utilized Room Nights)** = Actual room nights stayed (post check-in)  
+- **Realization %** = **DURN / Booked Room Nights**  
+- **WoW & MoM Change %** (Time Intelligence)
 
-Each KPI is designed to support **diagnostic, not just descriptive, analysis**.
+> **Note:** DURN is used to accurately capture realized stays after cancellations and no-shows, improving revenue realism.
 
 ---
 
 ## 🔄 Analytics Workflow
-1. **Business Requirement Analysis**  
-   - Revenue-focused KPIs defined with domain context  
-
-2. **Data Cleaning & Transformation**  
-   - Power Query used for standardization and enrichment  
-
-3. **Data Modeling**  
-   - Star Schema with optimized relationships  
-
-4. **KPI Engineering**  
-   - DAX measures with validation against raw data  
-
-5. **Dashboard Development**  
-   - Interactive visuals with drill-down and tooltips  
-
-6. **Stakeholder Feedback Loop**  
-   - Iterative enhancements based on business review  
+1. Requirement analysis with revenue context  
+2. Data cleaning & enrichment (Power Query)  
+3. Star schema modeling  
+4. DAX KPI development & validation  
+5. Interactive dashboard build  
+6. Stakeholder feedback & iteration  
 
 ---
 
 ## 📈 Dashboard Capabilities
-- Executive KPI overview  
-- Multi-level drill-down:
-  - City → Property → Room Type → Channel  
-- Weekday vs Weekend performance comparison  
-- WoW & MoM trend indicators  
-- Conditional formatting for quick issue detection  
+- Executive KPI snapshot  
+- Drill-down: City → Property → Room Type → Channel  
+- Weekday vs Weekend comparison  
+- WoW & MoM trends (DAX)  
+- Conditional formatting for performance monitoring  
 
 ---
 
-## 💡 Business Insights Generated
-- Revealed absence of dynamic pricing despite demand variability  
-- Identified underperforming hotels driven by cancellations and low ratings  
-- Highlighted channel-level revenue inefficiencies  
-- Demonstrated correlation between customer ratings and occupancy  
+## 💡 Business Insights
+- Flat pricing despite demand variability  
+- Revenue loss driven by cancellations/no-shows (captured via **DURN**)  
+- Underperforming properties linked to low ratings  
+- Channel-level inefficiencies identified  
 
 ---
 
 ## 🧠 Skills Demonstrated
-- Data Analytics & BI Development  
-- Data Modeling (Star Schema)  
-- DAX & KPI Engineering  
+- Power BI Dashboarding  
+- **DAX (KPI & Time Intelligence, incl. DURN)**  
+- Power Query (ETL)  
+- Star Schema Modeling  
 - Business & Revenue Analytics  
-- Stakeholder Communication  
-- Analytical Problem Solving  
 
 ---
 
 ## 🛠️ Tools & Technologies
-- **Power BI**  
-- **Power Query**  
+- Power BI  
+- Power Query  
 - **DAX**  
-- **SQL (conceptual & modeling)**  
+- SQL (conceptual modeling)
 
 ---
 
